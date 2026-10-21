@@ -1,0 +1,92 @@
+@use '../../styles/variables' as *;
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#hero {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    box-sizing: border-box;
+    color: $text-main;
+
+    .home-text {
+        flex: 1;
+        max-width: 600px;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: $text-muted;
+            line-height: 1.6;
+        }
+    }
+
+    .home-visual-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .animated-card {
+            width: 100%;
+            max-width: 420px;
+            padding: 2.5rem;
+            background: rgba($text-muted, 0.03);
+            border: 1px solid rgba($accent-color, 0.3);
+            border-radius: 8px;
+            box-shadow: $shadow-2;
+            animation: fadeInRight 0.65s ease-out forwards;
+            transition: $transition-out; // Uses the 1s out transition by default
+
+            &:hover {
+                border-color: $accent-color;
+                transform: translateY(-4px);
+                transition: $transition-in; // Uses the 0.65s in transition on hover
+            }
+
+            .card-tag {
+                font-family: monospace;
+                font-size: 1.1rem;
+                color: $accent-color;
+                font-weight: 600;
+                display: block;
+                margin-bottom: 1.5rem;
+            }
+
+            .code-snippet {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+
+                code {
+                    font-family: monospace;
+                    font-size: 0.95rem;
+                    color: $text-muted;
+                    background:$bg-secondary;
+                    padding: 0.5rem 0.75rem;
+                    border-radius: 4px;
+                    border-left: 2px solid $accent-color;
+                }
+            }
+        }
+    }
+}

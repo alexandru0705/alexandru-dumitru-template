@@ -1,0 +1,83 @@
+const projectsData = [
+    {
+        id: "booki",
+        title: "Booki",
+        category: "HTML & CSS / Responsive Design",
+        description: "Responsive HTML/CSS prototype for a travel agency startup, focusing on pixel-perfect UI execution and fluid layout adaptation across devices.",
+        images: [
+            "/images/booki-thumb.webp",
+            "/images/booki-logo.webp",
+            "/images/booki-tablet.webp",
+            "/images/booki-mobile.webp"
+        ],
+        tags: ["HTML5", "CSS3", "Responsive Design", "Git"],
+        githubUrl: "https://github.com/OpenClassrooms-Student-Center/Booki_avec_Companion.git"
+    },
+    {
+        id: "sophie-bluel",
+        title: "Portfolio Architecte - Sophie Bluel",
+        category: "JavaScript & DOM Manipulation",
+        description: "Dynamic frontend application integrating an Express backend API with user authentication, media upload modals, and real-time DOM filtering.",
+        images: [
+            "/images/sophie-bluel-thumb.webp",
+            "/images/sophie-bluel-logo.webp",
+            "/images/sophie-bluel-login.webp",
+            "/images/sophie-bluel-desktop-edit.webp",
+            "/images/sophie-bluel-modals.webp"
+        ],
+        tags: ["JavaScript", "DOM", "Node.js", "Express", "REST API"],
+        githubUrl: "https://github.com/OpenClassrooms-Student-Center/Portfolio-architecte-sophie-bluel.git"
+    },
+    {
+
+        id: "nina-carducci",
+        title: "Optimisation & SEO - Nina Carducci",
+        category: "Performance Auditing & Accessibility",
+        description: "Complete performance, SEO, and accessibility overhaul for a photographer's portfolio, driving Lighthouse metrics to optimal levels.",
+        images: [
+            "/images/nina-carducci-thumb.webp",      // Main card preview
+            "/images/nina-carducci-audit-before.webp", // Initial score (65 performance)
+            "/images/nina-carducci-audit-after.webp",  // Optimized 100/100 Lighthouse score
+            "/images/nina-carducci-seo.webp"         // Rich Results structured data validation
+        ],
+        tags: ["Lighthouse", "SEO", "Accessibility", "Image Optimization"],
+        githubUrl: "https://github.com/OpenClassrooms-Student-Center/Nina-Carducci-Dev.git",
+        liveUrl: "https://nina-carducci.github.io/"
+
+    },
+    {
+        id: "kasa",
+        title: "Kasa",
+        category: "React & Component Architecture",
+        description: "Modern single-page application built with React, React Router, and modular SASS, featuring dynamic data loading and custom collapsible components.",
+        images: [
+            "/images/kasa-thumb.webp",        // Desktop Home view[cite: 31]
+            "/images/kasa-fiche.webp",       // Desktop Rental Detail & Carousel[cite: 34]
+            "/images/kasa-about.webp",       // Desktop About page accordions[cite: 33]
+            "/images/kasa-404.webp",         // Custom 404 error page[cite: 32]
+            "/images/kasa-mobile-home.webp",   // Mobile Home view[cite: 30]
+            "/images/kasa-mobile-fiche.webp",  // Mobile Rental Detail view[cite: 29]
+            "/images/kasa-mobile-about.webp",  // Mobile About page view[cite: 28]
+            "/images/kasa-mobile-404.webp",    // Mobile 404 error view[cite: 27]
+            "/images/kasa-logo.webp"         // Brand Logo asset[cite: 35]
+        ],
+        tags: ["React", "React Router", "SASS", "Responsive Design"],
+        githubUrl: "https://github.com/OpenClassrooms-Student-Center/TesteurLogiciel_appli_location_immobiliere_React.git"
+    },
+    {
+        id: "mon-vieux-grimoire",
+        title: "Mon Vieux Grimoire",
+        category: "Node.js & MongoDB Backend API",
+        description: "Full-stack book rating and review application featuring a secure RESTful API built with Node.js, Express, and MongoDB, complete with JWT authentication and image processing.",
+        images: [
+            "/images/mon-vieux-grimoire-thumb.webp",  // Main card thumbnail & publication confirmation[cite: 39]
+            "/images/mon-vieux-grimoire-home.webp",   // Main library catalog view[cite: 36]
+            "/images/mon-vieux-grimoire-signup.webp", // Authentication / Sign up & login interface[cite: 38]
+            "/images/mon-vieux-grimoire-logo.webp"    // Brand logo asset[cite: 37]
+        ],
+        tags: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "REST API"],
+        githubUrl: "https://github.com/OpenClassrooms-Student-Center/P7-Dev-Web-livres.git"
+    }
+];
+
+export { projectsData };

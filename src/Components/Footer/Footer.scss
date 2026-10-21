@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.site-footer {
+  width: 100%;
+  background-color: rgba($bg-primary, 0.85);
+  color: $text-muted;
+  padding: 2rem;
+  text-align: center;
+  border-top: 3px solid rgba($text-muted, 0.5);
+  box-sizing: border-box;
+  box-shadow: $shadow-3;
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    transition: $transition-out;
+
+    &:hover {
+      color: $accent-color;
+      transition: $transition-in;
+    }
+  }
+}
